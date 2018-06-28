@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="/socket.io/socket.io.js"></script>
+    </head>
+    <body>
+        <div id="mbacPanel">
+            エアコン
+            <div id="mbacButtons">
+                <button id="coolButton" class="leftCorner rightCorner cool" onclick="coolAction()">冷房</button>
+                <button id="dryButton" class="leftCorner rightCorner dry" onclick="dryAction()">除湿</button>
+                <button id="heatButton" class="leftCorner rightCorner heat" onclick="heatAction()">暖房</button>
+                <button id="windButton" class="leftCorner rightCorner wind" onclick="windAction()">送風</button>
+                <button id="stopButton" class="leftCorner rightCorner stop" onclick="stopAction()">停止</button>
+                <button id="leftButton" class="leftCorner white" onclick="leftAction()">▼</button>
+                <button id="centerButton" class="white" onclick="centerAction()">28℃</button>
+                <button id="rightButton" class="rightCorner white" onclick="rightAction()">▲</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

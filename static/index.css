@@ -1,0 +1,88 @@
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+#mbacPanel {
+    width: calc(100vw - 20px);
+    margin: auto auto;
+}
+
+#mbacButtons {
+    width: 100%;
+    height: calc(50vw - 10px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    
+}
+
+#mbacButtons button {
+    width: 25%;
+    display: block;
+    background-color: gray;
+    border: solid 0.5px #ccc;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+    font-size: 8vw;
+    text-shadow: 0 0 2px #888;
+}
+
+#mbacButtons button:active {
+    opacity: 0.5;
+}
+
+.leftCorner {
+    border-top-left-radius: 16%;
+    border-bottom-left-radius: 16%;
+}
+
+.rightCorner {
+    border-top-right-radius: 16%;
+    border-bottom-right-radius: 16%;
+}
+
+.cool {
+    background: linear-gradient(#adfff7, #1fe3ff);
+}
+
+.dry {
+    background: linear-gradient(#667bff, #1f2cff);
+}
+
+.heat {
+    background: linear-gradient(#fc6, #ff9e1f);
+}
+
+.wind {
+    background: linear-gradient(#94ff66, #1fff21);
+}
+
+.stop {
+    background: linear-gradient(#f76, #f12930);
+}
+
+.gray {
+    background: linear-gradient(#8f8f8f, #5e5e5e);
+}
+
+.white {
+    background: linear-gradient(#f5f5f5, #f0f0f0);
+}
+
+@media screen and (min-width: 480px) { 
+    #mbacPanel {
+        width: 480px;
+    }
+
+    #mbacButtons {
+        height: 240px;
+    }
+
+    #mbacButtons button {
+        font-size: 38.4px;
+    }
+}
